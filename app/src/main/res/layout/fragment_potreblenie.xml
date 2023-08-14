@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PotreblenieFragment"
+    android:id="@+id/cons1">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/lay1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageZapravka"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="0.05"
+            android:src="@drawable/gas" />
+
+        <TextView
+            android:id="@+id/textViewFuel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.7"
+            android:text="Fuel:"
+            android:textColor="@color/light_black"
+            android:textSize="32sp" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:inputType="numberDecimal"
+            android:background="@drawable/edit_text_line"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@drawable/custom_cursor"
+            android:textSize="24sp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/lay2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/lay1">
+
+        <ImageView
+            android:id="@+id/imageSpeedometer"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="0.05"
+            android:src="@drawable/speedometer" />
+
+        <TextView
+            android:id="@+id/textViewDistance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.7"
+            android:text="Distance:"
+            android:textColor="@color/light_black"
+            android:textSize="32sp" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:inputType="numberDecimal"
+            android:background="@drawable/edit_text_line"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@drawable/custom_cursor"
+            android:textSize="24sp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/lay3"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/lay2">
+
+        <ImageView
+            android:id="@+id/imageCost"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="0.05"
+            android:src="@drawable/coins" />
+
+        <TextView
+            android:id="@+id/textViewPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.7"
+            android:text="Price / L (optional)"
+            android:textColor="@color/light_black"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:inputType="numberDecimal"
+            android:background="@drawable/edit_text_line"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@drawable/custom_cursor"
+            android:textSize="24sp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:id="@+id/textViewData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:text="No data available"
+        android:textColor="@color/light_black"
+        android:textSize="22sp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lay3"/>
+
+    <TextView
+        android:id="@+id/textViewData2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/light_black"
+        android:textSize="22sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewData"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

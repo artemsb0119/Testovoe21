@@ -1,0 +1,8 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:bottom="-25dp">
+        <shape android:shape="line">
+            <stroke android:color="@color/dark_green" android:width="2dp" /> <!-- Цвет линии и её толщина -->
+        </shape>
+    </item>
+</layer-list>
+
